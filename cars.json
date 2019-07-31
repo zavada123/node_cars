@@ -1,0 +1,22 @@
+{
+  "cars": [
+    {
+      "model": "tesla-x",
+      "photo": "https://loremflickr.com/1920/1040/car",
+      "price": 10,
+      "desc": "tesla-x lorem"
+    },
+    {
+      "model": "tesla-s",
+      "photo": "https://loremflickr.com/1920/1040/car",
+      "price": 10,
+      "desc": "tesla-s lorem"
+    },
+    {
+      "model": "tesla-three",
+      "photo": "https://loremflickr.com/1920/1040/car",
+      "price": 10,
+      "desc": "tesla-three lorem"
+    }
+  ]
+}
