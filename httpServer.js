@@ -32,7 +32,6 @@ if(req.url === '/') {
     `);
 }
 cars.forEach(element =>{
-  console.log(element);
   if(req.url === `/${element.model}`){
     res.writeHead(200, {
       "Content-Type": 'text/html'
@@ -58,7 +57,28 @@ cars.forEach(element =>{
 </html>
     `);
   }
-})
+});
+//last res return only 404
+res.writeHead(404, {
+  "Content-Type": 'text/html'
+});
+res.end(`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style></style>
+</head>
+<body>
+<h1>404</h1>
+</body>
+</html>
+`);
+
+
 });
 
 const PORT = process.env.PORT || 3000;
